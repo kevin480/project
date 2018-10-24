@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.springframework.org/schema/beans">
+    
+    <bean id="strVal" class="com.springcoreexample.beans.SetterInjectionBean" autowire="constructor">
+    
+    <property name="name" value="Kevin"></property>
+    <property name="loc" value="Hyderabad"></property>
+  
+    
+    </bean>
+    
+    <bean id="consInj" class="com.springcoreexample.beans.ConstructorInjExp">
+    
+    <constructor-arg value="27" index="0"/>
+    <constructor-arg value="Bangalore" index="1"></constructor-arg>
+    
+    </bean>
+    
+    <bean id="test" class="com.springcoreexample.beans.RefExample"> 
+    <property name="exp" value="iiiiiiiiiiiiiiiii"></property>
+    </bean>
+     
+     <bean id = "intInj" class="com.springcoreexample.beans.InterfaceInjectionExample"></bean>
+    </beans>
